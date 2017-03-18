@@ -39,6 +39,7 @@ So inspired by this answer I did sth like that:
 
 ```scala
 import com.github.kczulko.Marker.Expand
+
 @ExtendScope
 val colors = Seq("yellow", "green".expandToValWithName("greenColorDefinition"), "purple")
 ```
