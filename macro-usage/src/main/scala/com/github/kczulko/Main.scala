@@ -11,7 +11,7 @@ object Main {
       * a new expression in existing code: val secondValue: String = "two"
       */
     @ExtendScope
-    val seq = Seq("one", "two".expandToValWithName("secondValue"))
+    val strings = Seq("one", "two".expandToValWithName("secondValue"))
     assert(secondValue == "two")
 
     /**
@@ -19,7 +19,7 @@ object Main {
       * against Tree is type & expression agnostic
       */
     @ExtendScope
-    val seq2 = Seq(1, 2, valueSupplier(3).expandToValWithName("third"))
+    val digits = Seq(1, 2, valueSupplier(3).expandToValWithName("third"))
     assert(third == 3)
   }
 
