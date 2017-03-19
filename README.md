@@ -53,4 +53,4 @@ From project's root directory:
 sbt macroUsage/run
 ```
 
-It runs Main.scala from macroUsage project.
+It runs [Main.scala](macro-usage/src/main/scala/com/github/kczulko/Main.scala) from macroUsage project.
