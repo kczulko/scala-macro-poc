@@ -1,7 +1,7 @@
 # scala-macro-poc
 Small proof of concept based on scala macros
 
-## motivation
+## Motivation
 
 Many times I've encountered a situation like this:
 
