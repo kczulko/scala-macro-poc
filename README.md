@@ -26,7 +26,7 @@ class TestClass extends FlatSpec with Matchers {
 
 The problem described above is about a collection of values where one element within a collection is referenced by some other code elsewhere. I do not want to define a new value in preceeding line and put it reference into the collection... I'd like to have some kind of operator that would expand the sope of my `twice referenced` value.
 
-First idea to achieve expected behavior is to use scala macro with together with pattern-matching-variable-binding operator `@` so that it could look like that:
+First idea to achieve expected behavior is to use scala macro together with pattern-matching-variable-binding operator `@` so that it could look like that:
 
 ```scala
 val colors = Seq("yellow", greenColorDefinition @ "green", "purple")
