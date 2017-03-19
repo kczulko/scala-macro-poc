@@ -42,4 +42,6 @@ import com.github.kczulko.Marker.Expand
 
 @ExtendScope
 val colors = Seq("yellow", "green".expandToValWithName("greenColorDefinition"), "purple")
+
+assert(greenColorDefinition == "green")
 ```
