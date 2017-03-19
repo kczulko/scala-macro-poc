@@ -11,9 +11,18 @@ object Main {
 
     /**
       * @com.github.kczulko.ExtendScope together with 'expandToValWithName' have created
-      * a new expression in existing code:
-      * val secondValue: String = "two"
-       */
+      * a new expression in existing code: val secondValue: String = "two"
+      */
     assert(secondValue == "two")
+
+    /**
+      * This example shows that pattern matching
+      * against Tree is type & expression agnostic
+      */
+    @ExtendScope
+    val seq2 = Seq(1, 2, valueSupplier(3).expandToValWithName("third"))
+    assert(third == 3)
   }
+
+  def valueSupplier[T](v: T): T = v
 }
