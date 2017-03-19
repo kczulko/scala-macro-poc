@@ -1,3 +1,5 @@
+package com.github.kczulko
+
 
 object Marker {
   implicit class Expand[T](t: T) {

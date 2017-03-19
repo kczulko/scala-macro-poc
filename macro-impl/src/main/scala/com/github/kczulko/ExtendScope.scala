@@ -1,3 +1,5 @@
+package com.github.kczulko
+
 
 import scala.annotation.StaticAnnotation
 import scala.language.experimental.macros

@@ -1,7 +1,8 @@
+package com.github.kczulko
 
 object Main {
 
-  import Marker.Expand
+  import com.github.kczulko.Marker.Expand
 
   def main(args: Array[String]): Unit = {
 
@@ -9,7 +10,7 @@ object Main {
     val seq = Seq("one", "two".expandToValWithName("secondValue"))
 
     /**
-      * @ExtendScope together with 'expandToValWithName' have created
+      * @com.github.kczulko.ExtendScope together with 'expandToValWithName' have created
       * a new expression in existing code:
       * val secondValue: String = "two"
        */
