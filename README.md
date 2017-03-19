@@ -7,6 +7,7 @@ Many times I've encountered a situation like this:
 
 ```scala
 class TestClass extends FlatSpec with Matchers {
+
   val greenColorDefinition = "green"
   val colors = Seq("yellow", greenColorDefinition, "purple")
 
