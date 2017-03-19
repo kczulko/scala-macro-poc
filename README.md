@@ -45,3 +45,12 @@ val colors = Seq("yellow", "green".expandToValWithName("greenColorDefinition"), 
 
 assert(greenColorDefinition == "green")
 ```
+
+## Project execution
+
+From project's root directory:
+```
+sbt macroUsage/run
+```
+
+It runs Main.scala from macroUsage project.
