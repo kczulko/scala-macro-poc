@@ -54,3 +54,14 @@ sbt macroUsage/run
 ```
 
 It runs [Main.scala](macro-usage/src/main/scala/com/github/kczulko/Main.scala) from macroUsage project.
+
+```
+kczulko$ sbt macroUsage/run
+[info] Loading global plugins from /Users/kczulko/.sbt/0.13/plugins
+[info] Loading project definition from /Users/kczulko/Projects/scala-macro-poc/project
+[info] Set current project to macro (in build file:/Users/kczulko/Projects/scala-macro-poc/)
+[info] Compiling 1 Scala source to /Users/kczulko/Projects/scala-macro-poc/macro-usage/target/scala-2.12/classes...
+[info] Running com.github.kczulko.Main
+So it works :)
+[success] Total time: 4 s, completed 2017-03-19 12:47:50
+```
