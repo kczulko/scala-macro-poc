@@ -15,7 +15,7 @@ class TestClass extends FlatSpec with Matchers {
     website color shouldEqual greenColorDefinition
   }
 
-  it should "switch color to one selected by user" in {
+  it should "switch color to one selected by the user" in {
     colors foreach { newColor =>
       website.switchBackgroundColorTo(newColor)
       website backgroundColor shouldEqual newColor
