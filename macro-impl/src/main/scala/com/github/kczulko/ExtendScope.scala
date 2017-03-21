@@ -6,11 +6,6 @@ import scala.language.experimental.macros
 import scala.reflect.macros.blackbox
 
 class ExtendScope extends StaticAnnotation {
-
-  implicit class Injected[T](t: T) {
-    def asInjectedVal(valName: String): T = t
-  }
-
   def macroTransform(annottees: Any*) = macro ExtendScope.impl
 }
 
